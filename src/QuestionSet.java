@@ -1,4 +1,4 @@
-public class QuestionSet import java.util.ArrayList;
+import java.util.ArrayList;
 public class QuestionSet{
     private ArrayList <Question> questions;
 
@@ -12,17 +12,7 @@ public class QuestionSet{
             }
         }
     }
-    public QuestionSet(Database db){
-        questions = new ArrayList<>();
-        ArrayList <String> records = db.getRecords();
-        for (int i=0; i<records.size(); i++){
-            Question q = new Question(records.get(i));
-            Grouping g = new Grouping();
-            if (q.getTopic().equals(g.getInputTopic()) && q.getMarks()>=g.getInputMinMarks() && q.getMarks()<=g.getInputMaxMarks()){
-                questions.add(q);
-            }
-        }
-    }
+
 
     public void display(){
         for(int i=0; i<questions.size(); i++){
@@ -39,5 +29,3 @@ public class QuestionSet{
 //method: get the current filtered list
 
 
-{
-}

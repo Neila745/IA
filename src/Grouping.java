@@ -5,7 +5,7 @@ import java.io.IOException;
 //imports for writing
 import java.io.PrintWriter;
 import java.io.FileWriter;
-//import for arraylist 
+//import for arraylist
 import java.util.ArrayList;
 //import for user input
 import java.util.Scanner;
@@ -56,8 +56,8 @@ for (int i = 0; i < readword.size(); i++)
     if (readword.get(i + 1).equals(nationality)
         group.add(readword.get(i));
   }*/
-  
- /* 
+
+ /*
 //TODO: why doesnt it print all questions?
 //prints lines related to the topic question
   public void printLine(String fileName){
@@ -65,7 +65,7 @@ for (int i = 0; i < readword.size(); i++)
      FileReader fr = new FileReader(fileName);
      BufferedReader br = new BufferedReader(fr);)
      {
-      
+
       while (fileName != null) {
         String line = br.readLine();
         if (line.contains(topic)){
@@ -80,11 +80,11 @@ for (int i = 0; i < readword.size(); i++)
     catch (IOException e) {
  	    e.printStackTrace();
     }
-     
+
   }
 
 
-/* 
+/*
 //see if topic is in database
   public void isTopicValid(String fileName){
       boolean isValid= false;
@@ -95,7 +95,7 @@ for (int i = 0; i < readword.size(); i++)
           System.out.println("There aren't questions on that topic");
           isValid= false;
         }
-    
+
   }
 
 */
@@ -120,7 +120,7 @@ for (int i = 0; i < readword.size(); i++)
     catch (IOException e) {
  	    e.printStackTrace();
     }
-     
+
   }
 
 
@@ -144,7 +144,7 @@ for (int i = 0; i < readword.size(); i++)
     catch (IOException e) {
  	    e.printStackTrace();
     }
-     
+
   }
   */
 

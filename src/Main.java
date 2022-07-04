@@ -2,7 +2,12 @@ class Main {
     public static void main(String[] args) {
         System.out.println("IA");
         //Database
-        Database myDatabase = new Database("input.txt");
+
+        //ExamGenerator EG = new ExamGenerator();
+        //EG.ExamGenerator();
+        //QuestionSet(myDatabase, "Binaryuserd Search", 1, 100);
+        GUI_userPass gui = new GUI_userPass();
+        System.out.println("Finished.");
         //User
         //User u = new User("user","pass");
         //u.display();
@@ -13,11 +18,6 @@ class Main {
 
         //q.isTopicValid("input.txt"); //??
         //q.printLine("input.txt"); //??
-        Grouping g = new Grouping();
-        g.Grouping();
-        QuestionSet testSet = new QuestionSet(myDatabase);
-        //QuestionSet(myDatabase, "Binary Search", 1, 100);
-        testSet.display();
 
     }
 }

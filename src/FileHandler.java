@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 public class FileHandler{
 
-    public static ArrayList<String> readFromFile(String fileName) {
+    public static ArrayList<String> xreadFromFile(String fileName) {
 
         try (
                 // to read from the file
@@ -33,7 +33,7 @@ public class FileHandler{
             return null;
         }
     }
-    public void writeToFile(String fileName, String text, boolean append) {
+    public void xwriteToFile(String fileName, String text, boolean append) {
         // to write to the file
         // append: true= add to end, false= overwrite
 
@@ -49,7 +49,7 @@ public class FileHandler{
     }
 
     public void appendLine(String fileName, String data){
-        writeToFile(fileName,data,true);
+        xwriteToFile(fileName,data,true);
     }
 
     public int countLines(String fileName){

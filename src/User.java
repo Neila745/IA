@@ -1,14 +1,8 @@
 import java.util.Scanner;
-//imports for reading
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-//imports for writing
-import java.io.PrintWriter;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class User {
     private String name;
@@ -16,18 +10,25 @@ public class User {
     private int rowWidth;
 
 
-    public User(String n,String p){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Please Enter A User Name: ");
-        n = sc.nextLine();
-        Scanner sc2 = new Scanner(System.in);
-        System.out.println("Please Enter A Password: ");
-        p = sc2.nextLine();
+    public User(String name, String password){
+        //Scanner sc = new Scanner(System.in);
+        //System.out.println("Please Enter A User Name: ");
+        //name = sc.nextLine();
+        //Scanner sc2 = new Scanner(System.in);
+        //System.out.println("Please Enter A Password: ");
+        //password = sc2.nextLine();
+        this.name=name;
+        this.password=password;
 
-        rowWidth = 10;
-        name =padRecord(n);
-        password =padRecord(p);
     }
+
+    public String getInputUser(){
+        return name;
+    }
+    public String getInputPass(){
+        return password;
+    }
+
 
     public String toString(){
         return name + "," + password;
@@ -52,28 +53,28 @@ public class User {
         }
         return tempVar;
     }
-
-    public ArrayList userVerification(String fileName)throws IOException{
-        //file into list
-        ArrayList<String> userPass = new ArrayList<>();
-        BufferedReader br = null;
+/*
+  public ArrayList userVerification(String fileName)throws IOException{
+    //file into list
+    ArrayList<String> userPass = new ArrayList<>();
+    BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader(fileName));
-            String line;
-            while ((line = br.readLine()) != null) {
-                userPass.add(line);
-            }
+          br = new BufferedReader(new FileReader(fileName));
+          String line;
+          while ((line = br.readLine()) != null) {
+            userPass.add(line);
+          }
         } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
+          e.printStackTrace();
+          } finally {
             if (br != null) {
-                br.close();
+              br.close();
             }
-        }
+          }
 
-        return userPass;
-    }
-
+      return userPass;
+  }
+    */
     //split at comma
     //put into 2 lists
     //if both equal --> true
@@ -82,7 +83,7 @@ public class User {
   /*public void userVerification(String fileName1){
     try (
       FileReader fr = new FileReader(fileName);
-      BufferedReader br = new BufferedReader(fr);){ 
+      BufferedReader br = new BufferedReader(fr);){
       boolean verification = false;
       while (fileName != null ) {
         String file = br.readLine();
@@ -92,8 +93,8 @@ public class User {
           break;
         }
       }
-      
-      if(verification == true){ 
+
+      if(verification == true){
         System.out.println("right"); //using for testing purposes
       }else {
         System.out.println("wrong");
@@ -103,9 +104,9 @@ public class User {
  	    e.printStackTrace();
     }
   }
-  */
-    public void display (){
-        System.out.println(name +"," + password +".");
-    }
+
+  public void display (){
+    System.out.println(name +"," + password +".");
+  }*/
 
 }

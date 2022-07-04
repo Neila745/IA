@@ -6,7 +6,7 @@ public class Database {
 
     public Database(String filename) {
         this.filename = filename;
-        records = FileHandler.readFromFile(filename);
+        records = FileHandler.xreadFromFile(filename);
     }
 
     public ArrayList <String> getRecords(){
