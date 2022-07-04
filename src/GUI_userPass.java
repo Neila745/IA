@@ -14,7 +14,7 @@ public class GUI_userPass extends JFrame implements ActionListener {
     public GUI_userPass() {
         frame = new JFrame("userPass");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setBounds(0,0, 400, 300);
+        frame.setBounds(0,0, 1780, 830);
         frame.setLayout(null);
 
 

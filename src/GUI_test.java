@@ -12,7 +12,7 @@ public class GUI_test extends JFrame implements ActionListener {
     public GUI_test(int width, int height) {
         frame = new JFrame("userPass");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setBounds(0,0, 400, 300);
+        frame.setBounds(0,0, 1780, 830);
         frame.setLayout(null);
         title = new JLabel ("Computer Science Questions");
         title.setBounds(50, 50, 400, 40);
